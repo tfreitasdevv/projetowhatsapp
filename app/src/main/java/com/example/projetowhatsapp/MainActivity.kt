@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     private fun deslogarUsuario() {
         AlertDialog.Builder(this)
             .setTitle("Deslogar")
-            .setMessage("Deseja realmente deslogar?")
+            .setMessage("Deseja realmente sair?")
             .setNegativeButton("Cancelar") { dialog, posicao -> }
             .setPositiveButton("Sim") {  dialog, posicao ->
                 firebaseAuth.signOut()
